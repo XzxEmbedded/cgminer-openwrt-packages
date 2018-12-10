@@ -186,7 +186,7 @@ endif
 ifeq ($(CONFIG_CGMINER_AVALON911),y)
 	$(INSTALL_BIN) $(FILES_DIR)/cgminer-avalon9-monitor        $(1)/usr/bin/cgminer-monitor
 	$(INSTALL_BIN) $(FILES_DIR)/cgminer.avalon9.init           $(1)/etc/init.d/cgminer
-	$(CP)          $(FILES_DIR)/cgminer.avalon9.config         $(1)/etc/config/cgminer
+	$(CP)          $(FILES_DIR)/cgminer.avalon911.config         $(1)/etc/config/cgminer
 	$(INSTALL_BIN)          $(FILES_DIR)/mm-avalon9-upgrade             $(1)/usr/bin/mmupgrade
 endif
 endef
